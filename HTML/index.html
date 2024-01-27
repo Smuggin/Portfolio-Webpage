@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width,intial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet">
+    <title></title>
+    <link rel="stylesheet" href="..\CSS\style.css">
+    <script src="..\JS\script.js"></script>
+    <script src="https://kit.fontawesome.com/06f6d580d3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo"><span style="color: #ff004f;">Na</span>tum.</h1>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+
+            
+            <p>A computer science student</p>
+            <h1>Hi, I'm <span>Natum</span><br>third-year student<br>from <span style="color:red">T</span><span style="color:yellow">U</span></h1>
+        </div>
+    </div>
+</div>
+<video width="1600" height="600" controls style="margin-top:50px; margin-left: 10%;">
+    <source src="..\VDOs\welcome.mp4" type="video/mp4">
+</video>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="../images/Smallimg.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="about-me">About me</h1>
+                <p>I am a Computer Science student who eager to embark on an internship as an Innovation Engineer. I am passionate about exploring the frontiers of technology and applying my skills to innovative solutions. I am a quick learner, detail-oriented, and work well in teams. I am excited to gain more practical experience in the field of Innovation Engineer and contribute  my fresh perspective and technical prowess to an internship.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                <p class="tab-links" onclick="opentab('project')">Current-project</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Designing Web interfaces and basic user flow/prototypes. </li>
+                    <li><span>Web development</span><br>Developing webpage for variety of usages and deploying webpage.</li>
+                    <li><span>IOT/Microcontorllers</span><br>Developing a hardware tools with a microcontorllers with internet intregation</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2024-current</span><br>Designing and developing a webpage for
+                        Geoff Austin Associates Ltd.</li>
+                    <li><span>2023-2024</span><br>Web development/UI,UX designs internship at NexTech Asia co.,ltd</li>
+                    <li><span>2019-2020</span><br>Designed a presentation for
+                        Geoff Austin Associates Ltd.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="project">
+                <ul>
+                    <li><span>E-commerce platform about Thailand agriculture products (FarmlyNeighbour) </span><br>Start as a start-up projects with 4 peoples in team. <br>Currently in development and looking for investors.</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="about-me">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design/Developing</h2>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam repudiandae
+                </p> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-object-group"></i>
+                <h2>UI/UX design</h2>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam repudiandae
+                </p> -->
+            </div>
+            <div>
+                <i class="fa-solid fa-photo-film"></i>
+                <h2>Content creation/editing</h2>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam repudiandae
+                </p> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
