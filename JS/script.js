@@ -1,6 +1,5 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
-
 function opentab(tabname){
     for(tablink of tablinks){
         tablink.classList.remove("active-link") 
@@ -12,3 +11,17 @@ function opentab(tabname){
     console.log(tabname)
     document.getElementById(tabname).classList.add("active-tab");
 }
+$(document).ready(function() {
+ $('.icon-001-linkedin-1').on("click",function(){
+    console.log("click");
+    window.open("https://www.linkedin.com/in/natum-tongiang-41891a263/",'_blank');
+ });
+ $('.icon-003-facebook-1').on("click",function(){
+    console.log("click");
+    window.open("https://www.facebook.com/natum.tongiyang",'_blank');
+ });
+ $('.icon-004-github-1').on("click",function(){
+    console.log("click");
+    window.open("https://github.com/Smuggin",'_blank');
+ });
+ });
