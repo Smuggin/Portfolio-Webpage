@@ -21,18 +21,18 @@
     <div class="container">
         <nav>
             <h1 class="logo"><span style="color: #ff004f;">Na</span>tum.</h1>
-            <ul>
+            <ul id="sidemenus">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#activities">Activities</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-
-            
             <p>A computer science student</p>
-            <h1>Hi, I'm <span>Natum</span><br>third-year student<br>from <span style="color:red">T</span><span style="color:yellow">U</span></h1>
+            <h1>Hi, I'm <span>Natum</span><br>third-year <br>student from <span style="color:red">T</span><span style="color:yellow">U</span></h1>
         </div>
     </div>
 </div>
@@ -41,9 +41,15 @@
         <div class="row">
             <div class="about-col-1">
                 <img src="images/Smallimg.jpg">
+                <div class="resume" onclick="openPage('resume.html')">
+                        <div>
+                            <h2>My resume <i class="fa-solid fa-arrow-right"></i></h2>
+                        </div>
+                </div>
             </div>
             <div class="about-col-2">
                 <h1 class="about-me">About me</h1>
+                <h2 style="margin-bottom: 15px;">Natum Tongiang(Turk) <br>Age: 20</h2>
                 <p>I am a Computer Science student who eager to embark on an internship as an Innovation Engineer. I am passionate about exploring the frontiers of technology and applying my skills to innovative solutions. I am a quick learner, detail-oriented, and work well in teams. I am excited to gain more practical experience in the field of Innovation Engineer and contribute  my fresh perspective and technical prowess to an internship.</p>
             <div class="tab-titles">
                 <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -74,9 +80,21 @@
             </div>
         </div>
     </div>
+    <div class="read-more">
+        <div class="container">
+            <div class="reading-list" onclick="openPage('TUlife.html')">
+                <div>
+                    <h2>Read more about my TU life here <i class="fa-solid fa-arrow-right"></i></h2>
+                </div>
+                <div class="resume-phone" style="background-color: #ff004f;" onclick="openPage('resume.html')">
+                    <h2>My resume <i class="fa-solid fa-arrow-right"></i></h2>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <div id="activities">
-        <div class="activities-container">
+        <div class="activities-container" onclick="openPage('activities.html')">
             <div>
                 <h1 class="about-me">Activities Showcase ⇀</h1>
             </div>
@@ -99,8 +117,8 @@
                 </p> -->
             </div>
             <div>
-                <i class="fa-solid fa-photo-film"></i>
-                <h2>Content creation & editing</h2>
+                <i class="fa-solid fa-wifi"></i>
+                <h2>Microcontorllers & IoT</h2>
                 <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam repudiandae
                 </p> -->
             </div>

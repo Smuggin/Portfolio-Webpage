@@ -1,5 +1,12 @@
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
+function openmenu(){
+    document.getElementById("sidemenus").style.right="0px";
+}
+function closemenu(){
+    document.getElementById("sidemenus").style.right="-200px";
+}
+
 function opentab(tabname){
     for(tablink of tablinks){
         tablink.classList.remove("active-link") 
@@ -25,3 +32,6 @@ $(document).ready(function() {
     window.open("https://github.com/Smuggin",'_blank');
  });
  });
+ function openPage(url){
+    window.open(url);
+ }
